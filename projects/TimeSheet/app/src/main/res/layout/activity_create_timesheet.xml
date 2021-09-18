@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="timesheet"
+            type="com.example.timesheet.database.Timesheet" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        tools:context=".activity.CreateTimesheetActivity">
+
+        <TextView
+            android:id="@+id/tvTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/create_timesheets"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvWeekEnding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/week_ending"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle1" />
+
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/day"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvWeekEnding" />
+
+        <TextView
+            android:id="@+id/tvTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/task"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tvDay"
+            app:layout_constraintTop_toBottomOf="@+id/tvWeekEnding" />
+
+        <TextView
+            android:id="@+id/tvHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/hours"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tvTask"
+            app:layout_constraintTop_toBottomOf="@+id/tvWeekEnding" />
+
+        <TextView
+            android:id="@+id/edtDay1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/monday"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHours" />
+
+        <EditText
+            android:id="@+id/edtTask1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@{timesheet.task1}"
+            app:layout_constraintStart_toEndOf="@+id/edtDay1"
+            app:layout_constraintTop_toBottomOf="@+id/tvHours"
+            tools:text="task" />
+
+        <EditText
+            android:id="@+id/edtHours1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:inputType="number"
+            android:text="@{timesheet.hours1}"
+            app:layout_constraintStart_toEndOf="@+id/edtTask1"
+            app:layout_constraintTop_toBottomOf="@+id/tvHours"
+            tools:text="hours" />
+
+        <TextView
+            android:id="@+id/edtDay2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/tuesday"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay1" />
+
+        <EditText
+            android:id="@+id/edtTask2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@{timesheet.task2}"
+            app:layout_constraintStart_toEndOf="@+id/edtDay2"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay1"
+            tools:text="task" />
+
+        <EditText
+            android:id="@+id/edtHours2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:inputType="number"
+            android:text="@{timesheet.hours2}"
+            app:layout_constraintStart_toEndOf="@+id/edtTask2"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay1"
+            tools:text="hours" />
+
+
+        <TextView
+            android:id="@+id/edtDay3"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/wednesday"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay2" />
+
+        <EditText
+            android:id="@+id/edtTask3"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@{timesheet.task3}"
+            app:layout_constraintStart_toEndOf="@+id/edtDay3"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay2"
+            tools:text="task" />
+
+        <EditText
+            android:id="@+id/edtHours3"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:inputType="number"
+            android:text="@{timesheet.hours3}"
+            app:layout_constraintStart_toEndOf="@+id/edtTask1"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay2"
+            tools:text="hours" />
+
+
+        <TextView
+            android:id="@+id/edtDay4"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/thursday"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay3" />
+
+        <EditText
+            android:id="@+id/edtTask4"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@{timesheet.task4}"
+            app:layout_constraintStart_toEndOf="@+id/edtDay4"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay3"
+            tools:text="task" />
+
+        <EditText
+            android:id="@+id/edtHours4"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:inputType="number"
+            android:text="@{timesheet.hours4}"
+            app:layout_constraintStart_toEndOf="@+id/edtTask1"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay3"
+            tools:text="hours" />
+
+        <TextView
+            android:id="@+id/edtDay5"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/friday"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay4" />
+
+        <EditText
+            android:id="@+id/edtTask5"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@{timesheet.task5}"
+            app:layout_constraintStart_toEndOf="@+id/edtDay5"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay4"
+            tools:text="task" />
+
+        <EditText
+            android:id="@+id/edtHours5"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:inputType="number"
+            android:text="@{timesheet.hours5}"
+            app:layout_constraintStart_toEndOf="@+id/edtTask1"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay4"
+            tools:text="hours" />
+
+
+        <TextView
+            android:id="@+id/edtDay6"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/saturday"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay5" />
+
+        <EditText
+            android:id="@+id/edtTask6"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@{timesheet.task6}"
+            app:layout_constraintStart_toEndOf="@+id/edtDay6"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay5"
+            tools:text="task" />
+
+        <EditText
+            android:id="@+id/edtHours6"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:inputType="number"
+            android:text="@{timesheet.hours6}"
+            app:layout_constraintStart_toEndOf="@+id/edtTask6"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay5"
+            tools:text="hours" />
+
+        <TextView
+            android:id="@+id/edtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay6" />
+
+        <EditText
+            android:id="@+id/edtTotalHours"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="@{timesheet.totalHours}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDay6" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/submit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtTotal" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/cancel"
+            app:layout_constraintStart_toEndOf="@+id/btnSubmit"
+            app:layout_constraintTop_toBottomOf="@+id/edtTotal" />
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="16dp"
+            android:text="@{timesheet.days}"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tvWeekEnding"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

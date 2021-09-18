@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ZetranExample</string>
+    <string name="acme_attandance_system">Acme Attandance System</string>
+    <string name="create_employee">Create Employee</string>
+    <string name="punch_in_out">Punch In/Out</string>
+    <string name="report">Report</string>
+    <string name="create_employee_details">Create Employee Details</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="employee_id">Employee Id</string>
+    <string name="employee_dept">Employee Dept</string>
+    <string name="save">Save</string>
+    <string name="punch_in">Punch-In</string>
+    <string name="punch_out">Punch-Out</string>
+    <string name="reports">Reports</string>
+    <string name="punch_in_out_done">Punch In/Out for this day is done</string>
+</resources>

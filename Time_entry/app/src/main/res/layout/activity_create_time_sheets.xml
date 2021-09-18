@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create TimeSheets"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Week Ending"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spinner_date"
+            android:layout_width="20dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Day"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Task"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hours"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Monday"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/task1"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Web Dev"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/hour1"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="TuesDay"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/task2"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Testing"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/hour2"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="WednesDay"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/task3"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Backend"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/hour3"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Thursday"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/task4"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Testing"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/hour4"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Friday"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/task5"
+                android:layout_width="29dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Training"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/hour5"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Saturday"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Week End"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FDE300"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/TotalHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Total"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backround_button"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/backround_button"
+                android:text="Cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+</layout>

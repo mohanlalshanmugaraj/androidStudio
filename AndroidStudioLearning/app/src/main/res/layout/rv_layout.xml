@@ -1,0 +1,357 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Timesheets"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="40dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Week Ending"
+                android:textSize="25dp"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/weekOffDate1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#060607"
+                android:background="@drawable/button_background"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/grid_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:columnCount="3"
+            android:rowCount="7">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:text="Day"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginTop="25dp"
+                    android:text="Monday" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_column="0"
+                    android:layout_marginTop="25dp"
+                    android:text="Tuesday" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="25dp"
+                    android:text="Wednesday" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="25dp"
+                    android:text="Thursday" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="25dp"
+                    android:text="Friday" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="25dp"
+                    android:text="Saturday" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="25dp"
+                    android:text="Total" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:text="Task"/>
+
+                <EditText
+                    android:id="@+id/task11"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:textStyle="bold"
+                    android:hint="Web"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/task22"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    android:hint="App"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/task33"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:hint="Website"
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/task44"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:hint="Application"
+                    android:textStyle="bold"
+                    android:inputType="text"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/task55"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="1"
+                    android:hint="Debugging"
+                    android:textStyle="bold"
+                    android:inputType="text"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:hint="Week Off"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="21dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:text="Hours"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/upMonday_hr"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:textStyle="bold"
+                    android:inputType="number"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/upTuesday_hr"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:textStyle="bold"
+                    android:inputType="number"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/upWednesday_hr"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="2"
+                    android:textStyle="bold"
+                    android:inputType="number"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/upThursday_hr"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="2"
+                    android:textStyle="bold"
+                    android:inputType="number"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/upFriday_hr"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="2"
+                    android:textStyle="bold"
+                    android:inputType="number"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:hint="Week Off"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="21dp"/>
+
+                <TextView
+                    android:id="@+id/upTotal_hr"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="7"
+                    android:layout_column="2"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#000"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Update"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginRight="50dp"
+                android:textStyle="bold"
+                android:background="@drawable/button_background"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    summa.txt
+    Displaying summa.txt.

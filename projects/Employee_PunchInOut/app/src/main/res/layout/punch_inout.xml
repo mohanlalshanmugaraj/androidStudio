@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/background">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:text="PUNCH IN/OUT"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/empSpinId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#060607"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/punch_In"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:textSize="20dp"
+                android:hint="Punch In"
+                android:background="@drawable/rounded_edittext"
+                android:textColor="#070809"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/punch_Out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:hint="Punch Out"
+                android:textSize="20dp"
+                android:background="@drawable/rounded_edittext"
+                android:textColor="#070809"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/punchButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Punch In"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:textColor="#01273A"
+                android:layout_marginRight="30dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

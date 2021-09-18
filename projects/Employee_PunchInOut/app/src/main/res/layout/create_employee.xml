@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/background">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE EMPLOYEE"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/empName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_edittext"
+                android:textColor="#032F51"
+                android:padding="10dp"
+                android:gravity="center"
+                android:hint="Employee Name" />
+            <EditText
+                android:id="@+id/empId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_edittext"
+                android:textColor="#032F51"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:hint="Employee Id" />
+
+            <EditText
+                android:id="@+id/empDept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_edittext"
+                android:textColor="#032F51"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="10dp"
+                android:hint="Department" />
+            <Button
+                android:id="@+id/saveEmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:onClick="addEmp"
+                android:textColor="#012243"
+                android:background="@drawable/button_background"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="360dp"
+                android:text="Save" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

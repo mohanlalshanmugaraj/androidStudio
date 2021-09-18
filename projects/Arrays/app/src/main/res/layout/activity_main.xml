@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="enter name"
+        android:gravity="center"
+        android:background="#DAD8D8"
+        android:layout_marginBottom="50dp"/>
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="age"
+        android:gravity="center"
+        android:background="#DAD8D8"
+        android:layout_marginBottom="50dp"/>
+    <EditText
+        android:id="@+id/college"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="year"
+        android:gravity="center"
+        android:background="#DAD8D8"
+        android:layout_marginBottom="50dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginBottom="50dp"/>
+    <TextView
+        android:id="@+id/testView"
+        android:layout_width="250dp"
+        android:layout_height="100dp"/>
+
+
+
+
+
+</LinearLayout>

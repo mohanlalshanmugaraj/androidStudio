@@ -1,0 +1,4 @@
+rootProject.name = "BeginningJava"
+include ':app'
+include ':javaPractice'
+include ':couldthisbelve'
